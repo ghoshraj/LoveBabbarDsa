@@ -3,43 +3,48 @@ package com.lovebabbar.dsa.array;
 public class SortZeroOneTwo {
 
     public static void main(String[] args) {
-        int arr[] = {0, 0, 2, 1, 1, 0, 2, 1, 2};
+        int[] arr = {0, 0, 2, 1, 1, 0, 2, 1, 2};
         int j = 0;
         int k = 0;
         int l = 0;
         int m = 0;
 
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] == 0){
-            j++;
+        //take the count of each element
+        for (int value : arr) {
+            if (value == 0) {
+                j++;
             }
-             if(arr[i] == 1){
-            k++;
+            if (value == 1) {
+                k++;
             }
-             if(arr[i] == 2){
-            l++;
+            if (value == 2) {
+                l++;
             }
-               
+
         }
 
-        for(int i = 0; i < j; i++){
+        //put all the 0 first
+        for (int i = 0; i < j; i++) {
             arr[m] = 0;
             m++;
         }
 
-        for(int i = 0; i < k; i++){
+        //put all the 1
+        for (int i = 0; i < k; i++) {
             arr[m] = 1;
             m++;
         }
 
-        for(int i = 0; i < l; i++){
+        //put all the 2
+        for (int i = 0; i < l; i++) {
             arr[m] = 2;
             m++;
         }
 
-        for(int i = 0; i < arr.length; i++){
-            System.out.println(arr[i]);
+        //print the array
+        for (int value : arr) {
+            System.out.println(value);
         }
     }
-    
+
 }
