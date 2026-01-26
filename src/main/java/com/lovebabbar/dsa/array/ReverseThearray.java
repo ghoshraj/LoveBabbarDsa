@@ -3,19 +3,25 @@ package com.lovebabbar.dsa.array;
 public class ReverseThearray {
 
     public static void main(String[] args) {
-        
-        int arr[] = {8, 3, 21, -4, 10};
-        int finalarr[] = new int[arr.length];
-        int j = 0;
 
-        for(int i = arr.length - 1; i >= 0; i--){
-           finalarr[j] = arr[i];
-           j++;
+        //using 2pointer
+        int[] arr = {8, 3, 21, -4, 10};
+        int i = 0;
+        int j  = arr.length - 1;
+
+        while(i < j){
+            if(i < j){
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+            i++;
+            j--;
         }
 
-        for(int temp : finalarr){
+        //print the array
+        for (int temp : arr){
             System.out.println(temp);
         }
     }
-    
 }
