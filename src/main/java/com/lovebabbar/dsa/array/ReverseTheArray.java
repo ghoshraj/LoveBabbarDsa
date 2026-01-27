@@ -1,13 +1,13 @@
 package com.lovebabbar.dsa.array;
 
-public class ReverseThearray {
+public class ReverseTheArray {
 
     public static void main(String[] args) {
 
         //using 2pointer
         int[] arr = {8, 3, 21, -4, 10};
         int i = 0;
-        int j  = arr.length - 1;
+        int j = arr.length - 1;
 
         while(i < j){
             if(i < j){
