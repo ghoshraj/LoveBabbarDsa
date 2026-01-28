@@ -1,6 +1,6 @@
 package com.lovebabbar.dsa.array;
 
-public class maxSubarraySum {
+public class MaxSubarraySum {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, -2, 5};
