@@ -1,6 +1,6 @@
 package com.lovebabbar.dsa.array;
 
-public class minJumps {
+public class MinJumps {
 
     public static void main(String[] args) {
 
