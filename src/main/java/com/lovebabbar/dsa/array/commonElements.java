@@ -3,7 +3,7 @@ package com.lovebabbar.dsa.array;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
-public class commonElements {
+public class CommonElements {
 
     public static void main(String[] args) {
         int[] arr1 = {1, 5, 10, 20, 40, 80};
