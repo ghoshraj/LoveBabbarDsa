@@ -9,8 +9,8 @@ public class ReverseTheArray {
         int i = 0;
         int j = arr.length - 1;
 
-        while(i < j){
-            if(i < j){
+        while (i < j) {
+            if (i < j) {
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -20,7 +20,7 @@ public class ReverseTheArray {
         }
 
         //print the array
-        for (int temp : arr){
+        for (int temp : arr) {
             System.out.println(temp);
         }
     }

@@ -14,12 +14,12 @@ public class SmallestSubWithSum {
         int left = 0;
         int minLength = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
-            sum+= arr[i];
-           while (sum > target){
-               minLength = Math.min(minLength, i - left + 1);
-               sum -= arr[left];
-               left++;
-           }
+            sum += arr[i];
+            while (sum > target) {
+                minLength = Math.min(minLength, i - left + 1);
+                sum -= arr[left];
+                left++;
+            }
         }
         return minLength == Integer.MAX_VALUE ? 0 : minLength;
     }

@@ -10,8 +10,8 @@ public class MaximumProductSubArray {
 
     public static int maxProduct(int[] arr) {
         int maxProduct = arr[0], minProduct = arr[0], result = arr[0];
-        for (int i = 1; i < arr.length; i++){
-            if (arr[i] < 0){
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < 0) {
                 int temp = maxProduct;
                 maxProduct = minProduct;
                 minProduct = temp;

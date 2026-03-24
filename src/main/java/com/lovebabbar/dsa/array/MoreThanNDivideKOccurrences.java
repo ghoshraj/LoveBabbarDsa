@@ -13,9 +13,9 @@ public class MoreThanNDivideKOccurrences {
 
     public static int countOccurence(int[] arr, int k) {
         int result = 0;
-        int n = arr.length/k;
+        int n = arr.length / k;
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int num  : arr){
+        for (int num : arr) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
         for (int value : map.values()) {

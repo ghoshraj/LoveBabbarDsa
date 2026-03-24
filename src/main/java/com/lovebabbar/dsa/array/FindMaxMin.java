@@ -21,7 +21,7 @@ public class FindMaxMin {
         int max = Integer.MIN_VALUE;
 
         //find min and max
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i];
             }
@@ -38,5 +38,5 @@ public class FindMaxMin {
 
         return result;
     }
-    
+
 }

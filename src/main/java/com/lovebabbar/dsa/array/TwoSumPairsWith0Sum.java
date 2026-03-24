@@ -12,10 +12,10 @@ public class TwoSumPairsWith0Sum {
 
         List<List<Integer>> result = new ArrayList<>();
 
-        for (int temp : arr){
+        for (int temp : arr) {
             int target = -temp;
 
-            if (seen.contains(target)){
+            if (seen.contains(target)) {
                 int a = Math.min(temp, target);
                 int b = Math.max(temp, target);
 

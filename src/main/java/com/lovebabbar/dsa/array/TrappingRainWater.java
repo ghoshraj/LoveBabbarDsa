@@ -16,12 +16,11 @@ public class TrappingRainWater {
         int trappedRainWater = 0;
 
         while (left <= right) {
-            if (arr[left] < arr[right]){
+            if (arr[left] < arr[right]) {
                 leftMax = Math.max(leftMax, arr[left]);
                 trappedRainWater += leftMax - arr[left];
                 left++;
-            }
-            else{
+            } else {
                 rightMax = Math.max(rightMax, arr[right]);
                 trappedRainWater += rightMax - arr[right];
                 right--;

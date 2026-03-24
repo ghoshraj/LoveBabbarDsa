@@ -15,9 +15,9 @@ public class MinJumps {
         int lastIndexJump = 0;
 
         //base case
-        if(arr.length == 1) return 0;
+        if (arr.length == 1) return 0;
 
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             //find the window
             coverage = Math.max(coverage, i + arr[i]);
 
@@ -25,7 +25,7 @@ public class MinJumps {
             if (i == coverage) return -1;
 
             //update jump count
-            if (i == lastIndexJump){
+            if (i == lastIndexJump) {
                 lastIndexJump = coverage;
                 totalJumps++;
             }

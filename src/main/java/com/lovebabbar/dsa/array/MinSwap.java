@@ -11,17 +11,17 @@ public class MinSwap {
 
     public static int minSwaps(int[] arr, int k) {
         int goodElement = 0;
-        for (int temp : arr){
+        for (int temp : arr) {
             if (temp <= k) goodElement++;
         }
 
         int badElement = 0;
-        for (int i = 0; i < goodElement; i++){
+        for (int i = 0; i < goodElement; i++) {
             if (arr[i] > k) badElement++;
         }
 
         int ans = badElement;
-        for (int i = goodElement; i < arr.length; i++){
+        for (int i = goodElement; i < arr.length; i++) {
             if (arr[i] > k) badElement++;
             if (arr[i - goodElement] > k) badElement--;
 

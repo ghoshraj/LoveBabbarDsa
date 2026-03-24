@@ -22,8 +22,8 @@ public class ThreeWayPartitioning {
         int midIndex = 0;
         int largeIndex = 0;
 
-        for (int i = 0; i < arr.length; i++){
-            if (arr[i] < a){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < a) {
                 small[smallIndex] = arr[i];
                 smallIndex++;
             } else if (arr[i] >= a && arr[i] <= b) {
@@ -35,15 +35,15 @@ public class ThreeWayPartitioning {
             }
         }
 
-        for (int i = 0; i < smallIndex; i ++){
+        for (int i = 0; i < smallIndex; i++) {
             arr[i] = small[i];
         }
 
-        for (int i = 0; i < midIndex; i++){
+        for (int i = 0; i < midIndex; i++) {
             arr[i + smallIndex] = mid[i];
         }
 
-        for (int i = 0; i < largeIndex; i++){
+        for (int i = 0; i < largeIndex; i++) {
             arr[i + smallIndex + midIndex] = big[i];
         }
     }

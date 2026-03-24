@@ -7,8 +7,8 @@ public class FindDuplicate {
 
     public static void main(String[] args) {
 
-        int [] arr = {3, 3, 3, 3, 3};
-        Set<Integer>integerSet = new HashSet<>();
+        int[] arr = {3, 3, 3, 3, 3};
+        Set<Integer> integerSet = new HashSet<>();
 
         for (int j : arr) {
             if (integerSet.contains(j)) {
