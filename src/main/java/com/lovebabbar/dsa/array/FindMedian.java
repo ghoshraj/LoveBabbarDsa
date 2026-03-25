@@ -14,12 +14,11 @@ public class FindMedian {
         // Code here.
         Arrays.sort(arr);
         int n = arr.length;
-        if (n % 2 == 0){
-            int sum = arr[n/2] + arr[n/2 - 1];
-            return (double)sum/2;
-        }
-        else {
-            return arr[n/2];
+        if (n % 2 == 0) {
+            int sum = arr[n / 2] + arr[n / 2 - 1];
+            return (double) sum / 2;
+        } else {
+            return arr[n / 2];
         }
     }
 }
