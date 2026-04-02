@@ -19,6 +19,8 @@ public class MaxSubStr {
             if (zeroCount == oneCount)
                 count++;
         }
+
+        if (zeroCount != oneCount) return -1;
         return count;
     }
 }
